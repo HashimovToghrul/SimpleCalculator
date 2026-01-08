@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA0617052F0E6D2D008054A8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA0617042F0E6D2D008054A8 /* RxSwift */; };
+		CA06178C2F1018DE008054A8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA06178B2F1018DE008054A8 /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA06178C2F1018DE008054A8 /* RxCocoa in Frameworks */,
 				CA0617052F0E6D2D008054A8 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = MVVMsimple;
 			packageProductDependencies = (
 				CA0617042F0E6D2D008054A8 /* RxSwift */,
+				CA06178B2F1018DE008054A8 /* RxCocoa */,
 			);
 			productName = MVVMsimple;
 			productReference = CA0616E72F0E603E008054A8 /* MVVMsimple.app */;
@@ -371,6 +374,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA0617032F0E6D2D008054A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		CA06178B2F1018DE008054A8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA0617032F0E6D2D008054A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

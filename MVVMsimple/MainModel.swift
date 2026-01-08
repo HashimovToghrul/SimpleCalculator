@@ -8,39 +8,37 @@
 import Foundation
 import RxSwift
 
-class MainPageModel {
+class MainPageViewModel {
     
-    var result = BehaviorSubject<String>(value: "0")
     
-    func doAdd(inputNumber1: String, inputNumber2: String) {
-        
-        if let number1 = Int(inputNumber1), let number2 = Int(inputNumber2) {
-            let add = "\(number1 + number2)"
-            result.onNext(add)
-        }
-    }
+      private let resultSubject = BehaviorSubject<String>(value: "0")
+
+        var result: Observable<String> {
+          resultSubject.asObservable()
+      }
+
+      func calculate(_ operation: Operation, _ a: String, _ b: String) {
+          guard let x = Double(a),
+                let y = Double(b) else {
+              resultSubject.onNext("_____!_____")
+              return
+          }
+
+          let value: Double
+
+          switch operation {
+          case .add:
+              value = x + y
+          case .subtract:
+              value = x - y
+          case .multiply:
+              value = x * y
+          case .divide:
+              value = y == 0 ? 0 : x / y
+          }
+
+          resultSubject.onNext(String(value))
+      }
     
-    func doMultiply(inputNumber1: String, inputNumber2: String) {
-        if let number1 = Int(inputNumber1), let number2 = Int(inputNumber2) {
-            let mult = "\(number1 * number2)"
-            result.onNext(mult)
-        }
-    }
-    
-    func doMinus(inputNumber1: String, inputNumber2: String) {
-        if let number1 = Int(inputNumber1), let number2 = Int(inputNumber2) {
-            let minus = "\(number1 - number2)"
-            result.onNext(minus)
-        }
-    }
-    
-    func doDivide(inputNumber1: String, inputNumber2: String) {
-        if let number1 = Int(inputNumber1), let number2 = Int(inputNumber2) {
-            let divide = "\(number1 / number2)"
-            result.onNext(divide)
-            
-            
-        }
-    }
-    
+   
 }

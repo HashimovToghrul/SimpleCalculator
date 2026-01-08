@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMy-mE-TAX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMy-mE-TAX">
                                 <rect key="frame" x="50" y="138" width="293" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First number:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SsF-dg-6Oq">
@@ -38,7 +38,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb9-7l-ckA">
                                         <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="minus.rectangle.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="minus.rectangle.fill" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="minusButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CS9-19-6uZ"/>
                                         </connections>
@@ -46,7 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIA-li-eqb">
                                         <rect key="frame" x="74.666666666666657" y="0.0" width="55.333333333333343" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="plus.capsule" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus.capsule" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="addButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9C-jz-OCc"/>
                                         </connections>
@@ -54,7 +58,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxq-Xe-Cj5">
                                         <rect key="frame" x="150" y="0.0" width="49.666666666666657" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="divide.circle.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="divide.circle.fill" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="divideButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VkS-3v-upb"/>
                                         </connections>
@@ -62,7 +68,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVW-fH-PoL">
                                         <rect key="frame" x="219.66666666666669" y="0.0" width="43.666666666666686" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="multiplyButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baq-cL-7jZ"/>
                                         </connections>
@@ -71,7 +79,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="X5O-Xp-HC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2FB-CW-bEL"/>
                             <constraint firstItem="X5O-Xp-HC4" firstAttribute="top" secondItem="uN6-zx-IYF" secondAttribute="bottom" constant="30" id="3ah-14-F6y"/>
@@ -103,8 +111,8 @@
         <image name="minus.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
         <image name="plus.capsule" catalog="system" width="128" height="96"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.55294117647058827" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
